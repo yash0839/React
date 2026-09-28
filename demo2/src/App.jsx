@@ -2,22 +2,21 @@ import React, { useState } from 'react';
 
 const App = () => {
  
-  const [num, setNum] = useState({user:"yash", age:21})
+  const [num, setNum] = useState([10,20, 30,])
+
 
   const btnClicked =()=>{
-    const newNum = {...num}
-    newNum.user = 'mayur'
-
-    setNum(newNum)
+    const newNum = [...num]
+    newNum.push = (99)
+   console.log(newNum)
+    // setNum(newNum)
   }
 
-  //  function IncNum(){
-  //   setNum(num+1)
-  //  }
+  
 
   return (
     <div>
-      <h1>{num.user} ,{num.age}</h1>
+      <h2>{num}</h2>
       <button onClick={btnClicked} > click me</button>
     </div>
   );
