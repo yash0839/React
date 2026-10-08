@@ -21,6 +21,12 @@ const App = () => {
     setTitle("")
     setDetails("")
   }
+  const deleteNote =(idx)=>{
+    const copyTask = [...task]
+    copyTask.splice(idx,1)
+
+    setTask(copyTask)
+  }
 
 
 
@@ -29,7 +35,7 @@ const App = () => {
 
       <div className='flex items-center justify-center '>
         <form onSubmit={submitHandler}
-         className="flex items-center justify-center flex-col gap-4 p-4">
+          className="flex items-center justify-center flex-col gap-4 p-4">
 
           <h1 className='text-3xl font-bold'>Add Note</h1>
 
@@ -67,18 +73,35 @@ const App = () => {
 
       <div className='lg:w1/2 lg:border-l-2 p-10'>
         <h1 className='text-3xl font-bold'>Recent Notes</h1>
-        <div className='flex flex-wrap gap-5 mt-5 overflow-auto h-96'>
-          
+        <div className="flex flex-wrap gap-5 mt-5 overflow-auto h-96">
 
-          {task.map(function (elem,idx) {
-            return(
-            <div className='h-52 w-40 rounded-xl text-black p-4 bg-white'
-             key={idx}>
-              <h3 className='leading-tight text-xl font-bold'>{elem.title}</h3>
-              <p className='mt-3 leading-tight text-xl font-medium text-gray-500'>{elem.details}</p>
-            </div>
+          {task.map(function (elem, idx) {
+            return (
+              <div
+                key={idx}
+                className="flex justify-between flex-col items-start h-52 w-40 rounded-xl text-black p-4 bg-cover bg-center bg-no-repeat"
+                style={{
+                  backgroundImage: `url("https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85")`
+                }}
+              >
+                <div>
+                <h3 className="leading-tight text-xl font-bold">
+                  {elem.title}
+                </h3>
 
-          )})}
+                <p className="mt-3 leading-tight text-xl font-medium text-gray-800">
+                  {elem.details}
+                </p>
+                </div>
+                <button className="bg-red-600 text-white p-1 border-2xl font-bold rounded w-full active:scale-95 cursor-pointer active:bg-red-300 border-none"
+                  onClick={deleteNote}
+                >
+                  delete me
+                  
+                </button>
+              </div>
+            )
+          })}
 
         </div>
 
