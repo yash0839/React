@@ -4,6 +4,9 @@ import UseState from './hooks/usestate/UseState';
 import UseState2 from './hooks/usestate/useState2';
 import MyComp from './hooks/useEffect/MyComp';
 import EffectConut from './hooks/useEffect/EffectConut';
+import NewComp from './hooks/useContext/NewComp';
+import UserProvider from './hooks/useContext/UserProvider';
+import MyForm from './hooks/formValidation/MyForm';
 
 const App = () => {
   return (
@@ -12,7 +15,10 @@ const App = () => {
       {/* <UseState /> */}
       {/* <UseState2 /> */}
       {/* <MyComp /> */}
-      <EffectConut />
+      {/* <EffectConut /> */}
+      {/* <NewComp /> */}
+      {/* <UserProvider /> */}
+      <MyForm />
     </div>
   );
 }
