@@ -8,9 +8,13 @@ const MyForm = () => {
 
     const ip = useRef();
 
+
     useEffect(() => {
     ip.current?.focus();
+
   }, []);
+
+  
 
 
     return (
@@ -33,6 +37,7 @@ const MyForm = () => {
                         onChange={(e) => setName(e.target.value)}
                         className="w-full rounded-lg border border-gray-700 bg-gray-800 p-3 text-white outline-none focus:border-blue-500"
                     />
+
                     <h3 className="mt-2 text-blue-400">Name: {name}</h3>
                 </div>
 

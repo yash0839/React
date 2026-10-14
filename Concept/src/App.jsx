@@ -7,6 +7,7 @@ import EffectConut from './hooks/useEffect/EffectConut';
 import NewComp from './hooks/useContext/NewComp';
 import UserProvider from './hooks/useContext/UserProvider';
 import MyForm from './hooks/formValidation/MyForm';
+import FormValidation from './hooks/formValidation/FormValidation';
 
 const App = () => {
   return (
@@ -18,7 +19,8 @@ const App = () => {
       {/* <EffectConut /> */}
       {/* <NewComp /> */}
       {/* <UserProvider /> */}
-      <MyForm />
+      {/* <MyForm /> */}
+      <FormValidation />
     </div>
   );
 }
