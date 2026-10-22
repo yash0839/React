@@ -8,6 +8,9 @@ import NewComp from './hooks/useContext/NewComp';
 import UserProvider from './hooks/useContext/UserProvider';
 import MyForm from './hooks/formValidation/MyForm';
 import FormValidation from './hooks/formValidation/FormValidation';
+import HookForm from './hooks/formValidation/HookForm';
+import ColorChange from './hooks/useEffect/ColorChnage';
+import UseReducerCounter from './hooks/usereducer/UseReducerCounter';
 
 const App = () => {
   return (
@@ -20,7 +23,10 @@ const App = () => {
       {/* <NewComp /> */}
       {/* <UserProvider /> */}
       {/* <MyForm /> */}
-      <FormValidation />
+      {/* <FormValidation /> */}
+      {/* <HookForm /> */}
+      {/* <ColorChange /> */}
+      <UseReducerCounter />
     </div>
   );
 }

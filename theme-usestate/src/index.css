@@ -1,0 +1,30 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  height: 100vh;
+  padding: 30px;
+  transition: 1.9s;
+}
+
+.dark {
+  background-color: #171717;
+  color: white;
+}
+
+.light {
+  background-color: #ffffff;
+  color: #171717;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
