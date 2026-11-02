@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f1f5f9;
+  font-family: Arial, sans-serif;
+}
+
+.home-container,
+.login-container,
+.dashboard-container {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.home-card,
+.login-card,
+.dashboard-card {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.home-card h1,
+.dashboard-card h1 {
+  margin-bottom: 20px;
+  color: #172554;
+}
+
+.home-card p,
+.dashboard-card p {
+  color: #64748b;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.login-card {
+  max-width: 420px;
+  text-align: left;
+}
+
+.login-card h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.login-card > p {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 25px;
+}
+
+.dashboard-card {
+  max-width: 600px;
+}
+
+.dashboard-info {
+  background: #f1f5f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.dashboard-info p {
+  margin-bottom: 10px;
+}
