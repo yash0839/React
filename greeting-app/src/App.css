@@ -1,0 +1,40 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #e2e8f0;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.greeting-card {
+  background: white;
+  padding: 50px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.greeting-card h1 {
+  color: #2563eb;
+  margin-bottom: 15px;
+}
+
+.greeting-card p {
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+.greeting-card h4 {
+  color: #334155;
+}
