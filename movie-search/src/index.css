@@ -1,0 +1,26 @@
+
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  border-radius: 12px;
+}
+
+.card {
+  border: none;
+  overflow: hidden;
+}
+
+.card img {
+  object-fit: cover;
+}
+
+.card-body h5 {
+  font-weight: bold;
+}
+
+button {
+  cursor: pointer;
+}
